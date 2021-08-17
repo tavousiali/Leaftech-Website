@@ -1,0 +1,20 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+#steps {
+    h2 {
+        @include create-typography(1.75rem, 2.3125rem, $exo-font, 600, $heading-color);
+        
+        @include media-breakpoint-up(md) {
+            @include create-typography(2rem, 2.625rem, $exo-font, 600, $heading-color)
+        }
+    }
+
+    p.heading {
+        @include padding-x(1.5rem);
+
+        @include media-breakpoint-up(md) {
+            @include create-typography(1.125rem, 1.5rem, $exo-font, 300, $paragraph-color)
+        }
+    }
+}

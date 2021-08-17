@@ -1,0 +1,14 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+header {
+    background-color: $bg-color;
+
+    hr {
+        margin-top: -3px !important;
+
+        &.d-lg-block {
+            margin-top: -1px !important;
+        }
+    }
+}

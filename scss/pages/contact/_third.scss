@@ -1,0 +1,25 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+#third {
+    .form {
+        background-color: $bg-color;
+
+        textarea {
+            @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                text-align: start;
+            }
+          
+            @include media-breakpoint-up(lg) {
+                height: 6.25rem;
+            }
+
+            &::placeholder {
+                opacity: 0.4;
+            }
+        }
+    }
+}

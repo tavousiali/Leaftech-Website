@@ -1,0 +1,38 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+#first {
+    .form {
+        background-color: $bg-color;
+
+        label {
+            @include create-typography(0.75rem, 1.625rem, $nunito-sans-font, 600, $label-color);
+        }
+
+        input.form-control {
+            @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+            padding: 0.875rem 1.0625rem;
+
+            &::placeholder {
+                opacity: 0.4;
+            }
+        }
+
+        .form-check {
+            padding-left: 3.3em;
+
+            .form-check-input {
+                width: 1.5em;
+                height: 1.5em;
+                border: 0;
+                border-radius: 0;
+                margin-left: -2.5em;
+            }
+            .form-check-label {
+                @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+                padding-top: 0.5rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+#benefits {
+    background-color: $bg-color-light;
+    padding-top: 2rem;
+}

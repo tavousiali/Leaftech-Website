@@ -1,0 +1,45 @@
+@use '../../custom' as *;
+@use '../../components/mixin' as *;
+
+#second {
+    .form {
+        background-color: $bg-color;
+
+        div.row {
+            padding-left: 0.25rem;
+        }
+
+        p {
+            @include create-typography(1rem, 1.625rem, $nunito-sans-font, 600, $section-heading-color);
+        }
+    }
+
+    .btn.btn-outline-primary {
+        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+        box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
+        border: none;
+        padding: 0.625rem 1.8125rem  0.75rem;
+        opacity: 0.4;
+
+        &:hover {
+            color: $paragraph-color;
+        }
+    }
+
+    .btn-check:checked + .btn-outline-primary,
+    .btn-check:active + .btn-outline-primary,
+    .btn-outline-primary:active,
+    .btn-outline-primary.active,
+    .btn-outline-primary.dropdown-toggle.show {
+        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 600, $primary-color);
+        box-shadow: 0 2px 4px 0 rgba(0, 134, 230, 0.3) !important;
+        background-color: initial;
+        border: 1px solid #3087df;
+        padding: 0.65625rem 1.8125rem  0.78125rem;
+        opacity: 1;
+    }
+    .btn-outline-primary:hover {
+        color: $primary-color;
+        background-color: initial;
+    }
+}

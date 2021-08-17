@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <title>Leaftech - Homepage</title>
+</head>
+
+<body>
+    <footer class="py-3 border-top border-2 border-dark footer-1 d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 logo">
+                    <a href="index.html">
+                        LEAFTECH
+                    </a>
+                </div>
+                <div class="col-3">
+                    <div class="col-12">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="col-12">
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                    <div class="col-12 social-media">
+                        <a>Follow us</a>
+                        <ul class="d-flex mt-1">
+                            <li>
+                                <a href="https://www.facebook.com/leaftech.gmbh" target="_blank"><img
+                                        src="assets/images/footer/Facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/leaftech_twitt?lang=en" target="_blank"><img
+                                        src="assets/images/footer/Twitter.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/leaftech" target="_blank"><img
+                                        src="assets/images/footer/Linkedin.svg" alt="Facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-5 services">
+                    <a href="services.html">Services</a>
+                    <ul>
+                        <li><a href="services.html#SA">Shading automation</a></li>
+                        <li><a href="services.html#SRF">Single room forecast</a></li>
+                        <li><a href="services.html#BEF">Building energy forecast</a></li>
+                        <li><a href="services.html#BEF">Improved planning</a></li>
+                        <li><a href="services.html#BEF">Wind profile analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="py-3 border-top border-2 border-dark footer-1 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 logo">
+                    <a href="index.html">
+                        LEAFTECH
+                    </a>
+                </div>
+                <div class="col-sm-7 d-flex menu">
+                    <div class="">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="services">
+                        <a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="services.html#SA">Shading automation</a></li>
+                            <li><a href="services.html#SRF">Single room forecast</a></li>
+                            <li><a href="services.html#BEF">Building energy forecast</a></li>
+                            <li><a href="services.html#BEF">Improved planning</a></li>
+                            <li><a href="services.html#BEF">Wind profile analysis</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a href="contact.html">Contact us</a>
+                    </div>
+                    <div class="social-media">
+                        <a>Follow us</a>
+                        <ul class="d-flex mt-1">
+                            <li>
+                                <a href="https://www.facebook.com/leaftech.gmbh" target="_blank"><img
+                                        src="assets/images/footer/Facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/leaftech_twitt?lang=en" target="_blank"><img
+                                        src="assets/images/footer/Twitter.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/leaftech" target="_blank"><img
+                                        src="assets/images/footer/Linkedin.svg" alt="Facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="border-top border-2 footer-2">
+        <div class="container d-flex">
+            <div class="offset-md-5">
+                <a href="" class="privacy">Privacy Policy & Terms of service</a>
+            </div>
+            <div class="">
+                <a href="">Illustrations by www.freepik.com</a>
+            </div>
+            <div class="">
+                <a href="">Copyright 2020 Leaftech Gmbh</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll("#partner img").forEach(el => {
+                el.addEventListener('mouseenter', function (e) {
+                    this.src = this.src.replace('.png', '') + "_Colored.png";
+                });
+                el.addEventListener('mouseout', function (e) {
+                    this.src = this.src.replace('_Colored.png', '') + ".png";
+                });
+            });
+        });
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll(".social-media img").forEach(el => {
+                el.addEventListener('mouseenter', function (e) {
+                    this.src = this.src.replace('.svg', '') + "_hover.svg";
+                });
+                el.addEventListener('mouseout', function (e) {
+                    this.src = this.src.replace('_hover.svg', '') + ".svg";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

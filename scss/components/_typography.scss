@@ -1,0 +1,34 @@
+@use 'mixin' as *;
+@use '../custom' as *;
+
+header {
+    h1 {
+        @include create-typography(1.75rem, 2.3125rem, $exo-font, 600, $heading-color);
+
+        @include media-breakpoint-up(md) {
+            @include create-typography(2rem, 2.625rem, $exo-font, 600, $heading-color);
+        }
+    }
+
+    p {
+        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+    }
+}
+
+section {
+    h3 {
+        @include create-typography(1.25rem, 1.625rem, $exo-font, 600, $section-heading-color);
+    }
+
+    p {
+        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+    }
+
+    a {
+        @include create-typography(0.9375rem, 1.25rem, $nunito-sans-font, 700, $link-color);
+    }
+}
+
+a.btn {
+    @include create-typography(0.9375rem, 1.25rem, $nunito-sans-font, 300, $button-color);
+}

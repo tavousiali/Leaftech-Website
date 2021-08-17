@@ -1,0 +1,52 @@
+$blue-color: #f9fbff;
+$blue-light-color: #fbfcfe;
+$blue-dark-color: #edf3fa;
+$dark-color: #263238;
+$primary-color: #3087df;
+
+$heading-color: #2f2f2f;
+$section-heading-color: $dark-color;
+$paragraph-color: #778aa3;
+$button-color: #fff;
+$label-color: #233238;
+
+$menu-color: #352917;
+$menu-active-color: $primary-color;
+
+$leaftech-logo-color: $primary-color;
+$link-color: $primary-color;
+
+$bg-color: $blue-color;
+$bg-color-light: $blue-light-color;
+$menu-bg-color: $blue-dark-color;
+
+// BORDER RADIUS OVERRIDES
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$border-radius-pill: 0;
+
+//FONTS
+$headings-font-weight: 700;
+$nunito-sans-font: "Nunito Sans";
+$exo-font: "Exo";
+
+$font-family-sans-serif: $nunito-sans-font, $exo-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+$headings-font-family: $exo-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+//HR
+$hr-opacity: 1;
+
+// FORM CONTROLS
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+$input-border-width: 0;
+
+.img-fluid {
+    width: 100%;
+}
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
