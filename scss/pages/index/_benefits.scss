@@ -6,9 +6,12 @@
     padding-top: 2rem;
 
     .img-fluid {
-        // height: 10.5rem;
-        width: unset;
+        width: 17.4375rem;
         text-align: left;
+
+        @include media-breakpoint-up(md) {
+            width: unset;
+        }
     }
 
     #mental-health {

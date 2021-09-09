@@ -22,17 +22,23 @@ footer {
                 text-decoration: none;
                 font-weight: initial;
                 @include create-typography(0.625rem, 1rem, $nunito-sans-font, 300, $paragraph-color);
+                margin-bottom: 0;
             }
         }
         a {
             @include create-typography(0.625rem, 0.875rem, $nunito-sans-font, 700, $heading-color);
             text-decoration: none;
             display: flex;
-            // margin-bottom: 0.4375rem;
+            margin-bottom: 0.4375rem;
         }
         .logo > a {
             @include create-typography(1.125rem, 0.875rem, $exo-font, 700, $leaftech-logo-color);
             letter-spacing: 1px;
+            margin-top: 4px;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
         }
 
         @include media-breakpoint-up(md) {

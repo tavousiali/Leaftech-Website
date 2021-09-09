@@ -2,10 +2,13 @@
 @use '../../components/mixin' as *;
 
 #partner {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    // padding-top: 4rem;
+    // padding-bottom: 4rem;
 
     .row {
+        align-items: center;
+        height: 10rem;
+
         a {
             display: flex;
             justify-content: center;
@@ -13,7 +16,22 @@
 
         img {
             max-width: 100%;
-            height: 2rem;
+            // height: 2rem;
+        }
+    }
+
+    .col {
+        @include media-breakpoint-up(md) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-left: 1.625rem;
+            padding-right: 1.625rem;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-left: 1.8125rem;
+            padding-right: 1.8125rem;
         }
     }
 }
