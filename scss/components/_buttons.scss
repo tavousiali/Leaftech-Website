@@ -4,7 +4,9 @@
 a.btn {
     box-shadow: 0 2px 9px 0 rgb(0 135 230 / 60%);
     padding: 0.75rem 3.0625rem;
-    
+    background-color: $primary-color;
+    border-color: $primary-color;
+
     &:hover {
         color: $button-color;
     }

@@ -4,4 +4,24 @@
 #benefits {
     background-color: $bg-color-light;
     padding-top: 2rem;
+
+    .img-fluid {
+        // height: 10.5rem;
+        width: unset;
+        text-align: left;
+    }
+
+    #mental-health {
+        margin-top: -6px;
+    }
+
+    #grades {
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 1.5625rem;
+        margin-bottom: 0.75rem;
+    }
 }

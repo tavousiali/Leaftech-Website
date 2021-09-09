@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.img-fluid {
-  width: 100%;
-}
-
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10816,6 +10812,8 @@ a.btn {
 a.btn {
   box-shadow: 0 2px 9px 0 rgba(0, 135, 230, 0.6);
   padding: 0.75rem 3.0625rem;
+  background-color: #3087df;
+  border-color: #3087df;
 }
 a.btn:hover {
   color: #fff;
@@ -10959,7 +10957,15 @@ header hr {
 }
 @media (min-width: 1200px) {
   header hr {
-    margin-top: 1px;
+    margin-top: -1px;
+  }
+}
+@media (min-width: 1200px) {
+  header .text h1 {
+    margin-top: 3.625rem !important;
+  }
+  header .text p {
+    padding-right: 2rem;
   }
 }
 
@@ -10979,6 +10985,21 @@ header hr {
 #benefits {
   background-color: #fbfcfe;
   padding-top: 2rem;
+}
+#benefits .img-fluid {
+  width: unset;
+  text-align: left;
+}
+#benefits #mental-health {
+  margin-top: -6px;
+}
+#benefits #grades {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+#benefits h3 {
+  margin-top: 1.5625rem;
+  margin-bottom: 0.75rem;
 }
 
 #steps h2 {
@@ -11005,16 +11026,24 @@ header hr {
   #steps p.heading {
     font-size: 1.125rem;
     line-height: 1.5rem;
-    font-family: "Exo";
+    font-family: "Nunito Sans";
     font-weight: 300;
     color: #778aa3;
   }
 }
-
-#contact {
-  background-color: #fbfcfe;
+#steps h3 {
+  margin-top: 0.375rem;
+  margin-bottom: 0.75rem;
 }
 
+#contact {
+  background-color: #f9fbff;
+}
+
+footer.footer-1 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
 footer.footer-1 .services li {
   width: 0;
   white-space: nowrap;
@@ -11022,6 +11051,7 @@ footer.footer-1 .services li {
 footer.footer-1 ul {
   list-style-type: none;
   padding: 0rem;
+  margin-top: 0.3125rem;
 }
 footer.footer-1 li a {
   text-decoration: none;
@@ -11040,7 +11070,6 @@ footer.footer-1 a {
   color: #2f2f2f;
   text-decoration: none;
   display: flex;
-  margin-bottom: 0.4375rem;
 }
 footer.footer-1 .logo > a {
   font-size: 1.125rem;
@@ -11059,7 +11088,7 @@ footer.footer-2 > div {
   justify-content: space-between;
 }
 footer.footer-2 a {
-  font-size: 0.375rem;
+  font-size: 0.5rem;
   line-height: 0.6875rem;
   font-family: "Nunito Sans";
   font-weight: 200;

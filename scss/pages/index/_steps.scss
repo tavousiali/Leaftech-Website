@@ -14,7 +14,12 @@
         @include padding-x(1.5rem);
 
         @include media-breakpoint-up(md) {
-            @include create-typography(1.125rem, 1.5rem, $exo-font, 300, $paragraph-color)
+            @include create-typography(1.125rem, 1.5rem, $nunito-sans-font, 300, $paragraph-color)
         }
+    }
+
+    h3 {
+        margin-top: 0.375rem;
+        margin-bottom: 0.75rem;
     }
 }
