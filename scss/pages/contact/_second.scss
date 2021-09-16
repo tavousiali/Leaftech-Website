@@ -18,7 +18,8 @@
         @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
         box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
         border: none;
-        padding: 0.625rem 1.8125rem  0.75rem;
+        padding: 10px 29px;
+        // padding: 0.625rem 1.8125rem  0.75rem;
         opacity: 0.4;
 
         &:hover {
@@ -33,13 +34,18 @@
     .btn-outline-primary.dropdown-toggle.show {
         @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 600, $primary-color);
         box-shadow: 0 2px 4px 0 rgba(0, 134, 230, 0.3) !important;
-        background-color: initial;
+        background-color: white;
         border: 1px solid #3087df;
-        padding: 0.65625rem 1.8125rem  0.78125rem;
+        padding: 9px 28px;
+        // padding: 0.65625rem 1.8125rem  0.78125rem;
         opacity: 1;
     }
     .btn-outline-primary:hover {
         color: $primary-color;
         background-color: initial;
+    }
+
+    .container {
+        padding: 1rem 2rem 1.5rem;
     }
 }

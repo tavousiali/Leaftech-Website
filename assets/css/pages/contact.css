@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media (min-width: 1400px) {
+  .container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 1092px !important;
+  }
+}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -5123,7 +5133,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3);
   border-radius: 0;
 }
 .toast:not(.showing):not(.show) {
@@ -6290,7 +6300,7 @@ textarea.form-control-lg {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3) !important;
 }
 
 .shadow-sm {
@@ -10983,14 +10993,35 @@ header hr.d-lg-block {
   border-radius: 0;
   margin-left: -2.5em;
 }
+#first .form .form-check .form-check-input:checked {
+  background-color: #3087df;
+}
 #first .form .form-check .form-check-label {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.25rem;
   font-family: "Nunito Sans";
   font-weight: 300;
   color: #778aa3;
   padding-top: 0.5rem;
   white-space: nowrap;
+}
+@media (min-width: 576px) {
+  #first .form .form-check .form-check-label {
+    font-size: 0.875rem;
+  }
+}
+#first .form .container {
+  padding: 2rem;
+}
+@media (max-width: 767.98px) {
+  #first .form .container {
+    padding-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  #first .form .container {
+    padding-left: 0.75rem;
+  }
 }
 
 #second .form {
@@ -11014,7 +11045,7 @@ header hr.d-lg-block {
   color: #778aa3;
   box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3);
   border: none;
-  padding: 0.625rem 1.8125rem 0.75rem;
+  padding: 10px 29px;
   opacity: 0.4;
 }
 #second .btn.btn-outline-primary:hover {
@@ -11031,14 +11062,17 @@ header hr.d-lg-block {
   font-weight: 600;
   color: #3087df;
   box-shadow: 0 2px 4px 0 rgba(0, 134, 230, 0.3) !important;
-  background-color: initial;
+  background-color: white;
   border: 1px solid #3087df;
-  padding: 0.65625rem 1.8125rem 0.78125rem;
+  padding: 9px 28px;
   opacity: 1;
 }
 #second .btn-outline-primary:hover {
   color: #3087df;
   background-color: initial;
+}
+#second .container {
+  padding: 1rem 2rem 1.5rem;
 }
 
 #third .form {
@@ -11064,6 +11098,13 @@ header hr.d-lg-block {
 }
 #third .form textarea::placeholder {
   opacity: 0.4;
+}
+#third .form .container {
+  padding: 1.875rem;
+}
+#third .form .container textarea {
+  padding-left: 1.6875rem;
+  padding-top: 0.75rem;
 }
 
 #submit {
@@ -11102,6 +11143,11 @@ footer.footer-1 a {
   text-decoration: none;
   display: flex;
   margin-bottom: 0.4375rem;
+}
+@media (min-width: 1200px) {
+  footer.footer-1 .logo {
+    padding-left: 4rem;
+  }
 }
 footer.footer-1 .logo > a {
   font-size: 1.125rem;

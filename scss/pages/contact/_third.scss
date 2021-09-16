@@ -12,13 +12,22 @@
             @include media-breakpoint-up(md) {
                 text-align: start;
             }
-          
+
             @include media-breakpoint-up(lg) {
                 height: 6.25rem;
             }
 
             &::placeholder {
                 opacity: 0.4;
+            }
+        }
+
+        .container {
+            padding: 1.875rem;
+
+            textarea {
+                padding-left: 1.6875rem;
+                padding-top: 0.75rem;
             }
         }
     }

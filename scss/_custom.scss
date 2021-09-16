@@ -31,8 +31,8 @@ $headings-font-weight: 700;
 $nunito-sans-font: "Nunito Sans";
 $exo-font: "Exo";
 
-$font-family-sans-serif: $nunito-sans-font, $exo-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+$font-family-sans-serif: $nunito-sans-font, $exo-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
 $headings-font-family: $exo-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -44,6 +44,21 @@ $hr-opacity: 1;
 $input-padding-y: 1rem;
 $input-padding-x: 1rem;
 $input-border-width: 0;
+
+//SHADOWS
+$box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3);;
+//GRID MAX WIDTH
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        //due to left margin of logo
+        max-width: 1092px !important;
+    }
+}
 
 // IMPORT BOOTSTRAP 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

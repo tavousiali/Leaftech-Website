@@ -27,11 +27,29 @@
                 border: 0;
                 border-radius: 0;
                 margin-left: -2.5em;
+
+                &:checked {
+                    background-color: $primary-color;
+                }
             }
             .form-check-label {
-                @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+                @include create-typography(0.75rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+                @include media-breakpoint-up(sm) {
+                    font-size: 0.875rem;
+                }
                 padding-top: 0.5rem;
                 white-space: nowrap;
+            }
+        }
+
+        .container {
+            padding: 2rem;
+
+            @include media-breakpoint-down(md) {
+                padding-left: 0;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-left: 0.75rem;
             }
         }
     }

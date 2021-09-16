@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@media (min-width: 1400px) {
+  .container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 1092px !important;
+  }
+}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -5123,7 +5133,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3);
   border-radius: 0;
 }
 .toast:not(.showing):not(.show) {
@@ -6290,7 +6300,7 @@ textarea.form-control-lg {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 2px 4px 0 rgba(119, 138, 163, 0.3) !important;
 }
 
 .shadow-sm {
@@ -11088,6 +11098,11 @@ footer.footer-1 a {
   text-decoration: none;
   display: flex;
   margin-bottom: 0.4375rem;
+}
+@media (min-width: 1200px) {
+  footer.footer-1 .logo {
+    padding-left: 4rem;
+  }
 }
 footer.footer-1 .logo > a {
   font-size: 1.125rem;
