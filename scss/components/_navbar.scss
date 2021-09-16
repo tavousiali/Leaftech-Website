@@ -43,6 +43,9 @@ nav {
             &.active {
                 color: $menu-active-color;
             }
+            &:hover {
+                color: $menu-active-color;
+            }
         }
     }
 
@@ -139,7 +142,8 @@ nav {
 
     @include media-breakpoint-up(lg) {
         &.navbar-expand-md .navbar-nav .nav-item .nav-link {
-            padding: 3rem 0 3rem 2rem;
+            margin: 3rem 0 3rem 2rem;
+            padding: 0;
             line-height: 1.1875rem;
         }
     }

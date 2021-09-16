@@ -10853,6 +10853,9 @@ nav .nav-item a.nav-link {
 nav .nav-item a.nav-link.active {
   color: #3087df;
 }
+nav .nav-item a.nav-link:hover {
+  color: #3087df;
+}
 @media (max-width: 767.98px) {
   nav .navbar-collapse {
     position: absolute;
@@ -10933,7 +10936,8 @@ nav .nav-item a.nav-link.active {
 }
 @media (min-width: 992px) {
   nav.navbar-expand-md .navbar-nav .nav-item .nav-link {
-    padding: 3rem 0 3rem 2rem;
+    margin: 3rem 0 3rem 2rem;
+    padding: 0;
     line-height: 1.1875rem;
   }
 }
