@@ -10981,8 +10981,8 @@ section .title p img {
 }
 
 .lead .container-md {
-  padding-top: 1.375rem;
-  padding-bottom: 1.375rem;
+  padding-top: 1.625rem;
+  padding-bottom: 1.625rem;
 }
 .lead p {
   font-size: 1rem;
@@ -11048,7 +11048,7 @@ ul.dashed > li:before {
 }
 
 header hr {
-  margin-top: -5px;
+  margin-top: -4px !important;
 }
 @media (min-width: 768px) {
   header hr {
