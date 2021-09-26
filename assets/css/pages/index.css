@@ -37,7 +37,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-sans-serif: "Nunito Sans", "Exo 2", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Nunito Sans", "Exo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -81,7 +81,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Exo 2", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Exo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
 }
@@ -10760,7 +10760,7 @@ textarea.form-control-lg {
 header h1 {
   font-size: 1.75rem;
   line-height: 2.3125rem;
-  font-family: "Exo 2";
+  font-family: "Exo";
   font-weight: 600;
   color: #2f2f2f;
 }
@@ -10768,7 +10768,7 @@ header h1 {
   header h1 {
     font-size: 2rem;
     line-height: 2.625rem;
-    font-family: "Exo 2";
+    font-family: "Exo";
     font-weight: 600;
     color: #2f2f2f;
   }
@@ -10784,7 +10784,7 @@ header p {
 section h3 {
   font-size: 1.25rem;
   line-height: 1.625rem;
-  font-family: "Exo 2";
+  font-family: "Exo";
   font-weight: 600;
   color: #263238;
 }
@@ -10860,7 +10860,7 @@ body {
 }
 
 nav {
-  font-family: "Nunito Sans", "Exo 2", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito Sans", "Exo", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -10879,7 +10879,7 @@ nav .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
 }
 nav .navbar-brand {
   color: #3087df;
-  font-family: "Exo 2";
+  font-family: "Exo";
   letter-spacing: 1px;
   font-size: 1.125rem;
 }
@@ -11011,6 +11011,11 @@ header hr {
     margin-top: -1px;
   }
 }
+@media (min-width: 1400px) {
+  header hr {
+    margin-top: -15px;
+  }
+}
 @media (min-width: 1200px) {
   header .text h1 {
     margin-top: 3.625rem !important;
@@ -11078,7 +11083,7 @@ header hr {
 #steps h2 {
   font-size: 1.75rem;
   line-height: 2.3125rem;
-  font-family: "Exo 2";
+  font-family: "Exo";
   font-weight: 600;
   color: #2f2f2f;
 }
@@ -11086,7 +11091,7 @@ header hr {
   #steps h2 {
     font-size: 2rem;
     line-height: 2.625rem;
-    font-family: "Exo 2";
+    font-family: "Exo";
     font-weight: 600;
     color: #2f2f2f;
   }
@@ -11108,9 +11113,23 @@ header hr {
   margin-top: 0.375rem;
   margin-bottom: 0.75rem;
 }
+#steps #Modelling {
+  width: auto;
+  margin: 0 auto;
+}
 
 #contact {
   background-color: #f9fbff;
+  padding-top: 1.625rem;
+  padding-bottom: 2.625rem;
+}
+#contact p {
+  margin-bottom: 1.1875rem;
+  line-height: 0.75rem;
+}
+#contact h3 {
+  margin-top: 3.4375rem;
+  margin-bottom: 0.625rem;
 }
 
 footer.footer-1 {
@@ -11154,7 +11173,7 @@ footer.footer-1 a {
 footer.footer-1 .logo > a {
   font-size: 1.125rem;
   line-height: 0.875rem;
-  font-family: "Exo 2";
+  font-family: "Exo";
   font-weight: 700;
   color: #3087df;
   letter-spacing: 1px;

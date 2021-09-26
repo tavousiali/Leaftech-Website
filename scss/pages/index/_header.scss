@@ -18,6 +18,9 @@ header {
         @include media-breakpoint-up(xl) {
             margin-top: -1px;
         }
+        @include media-breakpoint-up(xxl) {
+            margin-top: -15px;
+        }
     }
 
     @include media-breakpoint-up(xl) {

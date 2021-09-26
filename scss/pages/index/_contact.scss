@@ -3,4 +3,16 @@
 
 #contact {
     background-color: $bg-color;
+    padding-top: 1.625rem;
+    padding-bottom: 2.625rem;
+
+    p {
+        margin-bottom: 1.1875rem;
+        line-height: 0.75rem;
+    }
+
+    h3 {
+        margin-top: 3.4375rem;
+        margin-bottom: 0.625rem;
+    }
 }
