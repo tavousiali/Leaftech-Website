@@ -60,7 +60,8 @@
             <br class="d-md-none">
             something together
           </h1>
-          <p class="offset-md-2 col-md-8 text-md-start offset-lg-0 col-lg-12 col-xl-10 pb-5">Whether you would like to try our
+          <p class="offset-md-2 col-md-8 text-md-start offset-lg-0 col-lg-12 col-xl-10 pb-5">Whether you would like to
+            try our
             features, develop a solution together or just get more information, this
             page is for you.
             <br>
@@ -295,6 +296,21 @@
     </div>
   </footer>
   <script src="assets/js/bootstrap.bundle.js"></script>
+  <script>
+    (function () {
+      var services = getParameterByName('services');
+      document.getElementById(services).checked = true;
+    })();
+
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+  </script>
 </body>
 
 </html>

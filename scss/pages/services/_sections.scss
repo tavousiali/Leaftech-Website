@@ -12,7 +12,7 @@ section {
         }
 
         p {
-            @include create-typography(0.875rem, 1.625rem, $nunito-sans-font, 600, $primary-color);
+            @include create-typography(0.875rem, 1.625rem, $exo-font, 600, $primary-color);
             letter-spacing: 1.75px;
 
             img {
