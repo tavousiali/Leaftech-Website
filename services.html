@@ -85,7 +85,7 @@
                         class="img-fluid" />
                 </div>
                 <div class="text col-12 col-lg-6 offset-xl-1 col-xl-6 text-lg-start pb-4">
-                    <h3 class="mb-3">Every window is unique
+                    <h3>Every window is unique
                     </h3>
                     <p class="text-start offset-md-2 col-md-8 offset-lg-0 col-lg-11 col-xl-10 col-xxl-11">
                         Light intake differ from one window to another due to surrounding structures, architecture,
@@ -95,7 +95,7 @@
                         Hardware sensors only approximate the shading pattern on a building.
                         Leaftech's virtual sensors capture the acutal pattern.
                     </p>
-                    <h3 class="my-4 my-lg-3">Match the real shading conditions
+                    <h3>Match the real shading conditions
                         <br>
                         with virtual sensors
                     </h3>
@@ -132,7 +132,7 @@
                         class="img-fluid" />
                 </div>
                 <div class="text col-12 col-lg-6 offset-xl-1 text-lg-start">
-                    <h3 class="my-4">Making room for anticipation
+                    <h3>Making room for anticipation
                     </h3>
                     <p class="text-start offset-md-2 col-md-8 offset-lg-0 col-lg-12">Embedding all influence factors
                         including local infrastructure, weather patterns and user
@@ -144,22 +144,22 @@
                         systems to make better decisions and to anticipate future operation conditions.
                     </p>
 
-                    <h3 class="my-4 mb-md-3">Get the most of it
+                    <h3>Get the most of it
                     </h3>
                     <p class="text-start offset-md-2 col-md-8 offset-lg-0 col-lg-12">Enabling our algorithms to learn
                         from the indoor conditions leads to even better results. Sharing
                         room temperature, humidity and other parameters empowers the digital twin to learn about room
                         conditions and to increase the forecast precision.
                     </p>
-                    <div class="text row offset-md-2 col-md-8 offset-lg-0 col-lg-12 my-3 bg-color-blue py-1 px-2 mx-lg-0">
-                        <h3 class="mt-3">Combine with shading as a service
+                    <div class="text box row offset-md-2 col-md-8 offset-lg-0 col-lg-12 bg-color-blue mx-lg-0">
+                        <h3>Combine with shading as a service
                         </h3>
-                        <p class="text-start offset-lg-0 col-lg-12">Forecasting the intake of solar
+                        <p class="text-start offset-lg-0 col-lg-12 p1">Forecasting the intake of solar
                             radiation is one of the most important factors when applying
                             model-based control as it has a tremendous influence on the heating, cooling and illuminance
                             demands inside the buildings.
                         </p>
-                        <p class="text-start offset-lg-0 col-lg-12">Using shading as a service and
+                        <p class="text-start offset-lg-0 col-lg-12 p2">Using shading as a service and
                             combining it with Single room energy forecast you get the best
                             control for all systems and make the most of the forecast data.
                         </p>
@@ -192,7 +192,7 @@
                         class="img-fluid" />
                 </div>
                 <div class="text col-12 col-lg-6 offset-xl-1 text-lg-start mb-5">
-                    <h3 class="my-4">The more buildings in a system
+                    <h3>The more buildings in a system
                         <br class="d-md-none">
                         are twinned,
                         <br class="d-none d-md-block">
@@ -213,7 +213,7 @@
                         increased feasibility in energy procurement for the building owner.
                     </p>
 
-                    <h3 class="mt-4 mb-3">Increased grid efficiency
+                    <h3>Increased grid efficiency
                     </h3>
                     <ul class="dashed mb-3 offset-md-3 col-md-6 offset-lg-0 col-lg-12">
                         <li>Reduction of costs per kWh of energy
@@ -250,7 +250,7 @@
                         class="img-fluid px-lg-2 px-xl-0" />
                 </div>
                 <div class="text col-12 col-lg-6 offset-xl-1 text-lg-start mb-3">
-                    <h3 class="my-4 mt-lg-0">Plan for the future
+                    <h3>Plan for the future
                     </h3>
                     <p class="text-start offset-md-2 col-md-8 offset-lg-0 col-lg-12">Based on our digital twin and local
                         weather conditions we assess the energy balance of buildings
@@ -271,7 +271,7 @@
             </div>
         </div>
     </section>
-    <section id="BEF" class="image-text pt-5">
+    <section id="WPA" class="image-text pt-5">
         <div class="container-md px-4">
             <div class="title text-center">
                 <h2>Wind profile Analysis
@@ -285,7 +285,7 @@
                         class="img-fluid" />
                 </div>
                 <div class="text col-12 mb-3 offset-xl-1 col-lg-6 text-lg-start">
-                    <h3 class="my-4 mt-lg-0">Harness the wind
+                    <h3 class="my-3 mt-lg-0">Harness the wind
                     </h3>
                     <p class="text-start offset-md-2 col-md-8 offset-lg-0 col-lg-12">
                         The surrounding conditions do not only influence local solar radiation but are extremely
@@ -431,6 +431,18 @@
         </div>
     </footer>
     <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        document.getElementsByClassName('navbar-toggler-icon')[0].addEventListener('click', function () {
+            navbarToggler = document.getElementsByClassName('navbar-toggler')[0];
+            if (!navbarToggler.classList.contains('collapsed')) {
+                document.getElementsByTagName('nav')[0].classList.remove('close-sidenav')
+                document.getElementsByTagName('nav')[0].classList.add('open-sidenav')
+            } else {
+                document.getElementsByTagName('nav')[0].classList.remove('open-sidenav')
+                document.getElementsByTagName('nav')[0].classList.add('close-sidenav')
+            }
+        })
+    </script>
 </body>
 
 </html>

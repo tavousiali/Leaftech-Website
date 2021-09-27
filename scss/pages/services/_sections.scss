@@ -111,3 +111,43 @@ header {
         margin-bottom: 0.625rem;
     }
 }
+
+#IP,
+#WPA {
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+#SA,
+#SRF,
+#BEF,
+#IP,
+#WPA {
+    h3 {
+        margin-top: 1.875rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+#SRF .text.box {
+    padding-top: 1.125rem;
+    padding-bottom: 1.6875rem;
+    padding-left: 1.5625rem;
+    padding-right: 0.8125rem;
+
+    h3 {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    .p2 {
+        margin-bottom: 0;
+    }
+}

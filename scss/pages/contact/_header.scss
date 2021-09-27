@@ -2,6 +2,14 @@
 @use '../../components/mixin' as *;
 
 header {
+    .container {
+        padding-top: 5.9375rem;
+
+        h1 {
+            margin-top: 4.0625rem;
+        }
+    }
+
     background-color: $bg-color;
 
     hr {

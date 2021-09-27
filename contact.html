@@ -49,18 +49,19 @@
     </div>
   </nav>
   <header>
-    <div class="container pt-5">
+    <div class="container">
       <div class="row">
         <div class="image offset-2 col-8 offset-md-3 col-md-6 order-lg-2 offset-lg-1 col-lg-5 offset-xl-0">
           <img src="assets/images/contact/Mailbox-bro.svg" alt="mailbox" class="img-fluid" />
         </div>
         <hr class="border-bottom border-2 border-dark opacity-100 d-lg-none">
         <div class="text col-12 order-lg-1 col-lg-6">
-          <h1 class="my-4 text-center offset-md-2 col-md-8 text-md-start mt-md-5 offset-lg-0 col-lg-12">Let's start
+          <h1 class="mb-4 text-center offset-md-2 col-md-8 text-md-start offset-lg-0 col-lg-12">Let's start
             <br class="d-md-none">
             something together
           </h1>
-          <p class="offset-md-2 col-md-8 text-md-start offset-lg-0 col-lg-12 col-xl-10 pb-5">Whether you would like to
+          <p class="offset-md-2 col-md-8 text-md-start offset-lg-0 col-lg-12 col-xl-10 pb-5 mb-0">Whether you would like
+            to
             try our
             features, develop a solution together or just get more information, this
             page is for you.
@@ -73,10 +74,10 @@
     </div>
     <hr class="border-bottom border-2 border-dark opacity-100 d-none d-lg-block">
   </header>
-  <section id="contact-form" class="offset-md-1 col-md-10 offset-xl-3 col-xl-6">
+  <section id="contact-form" class="col-md-12 px-md-3 offset-lg-1 col-lg-10 offset-xl-3 col-xl-6">
     <section id="first" class="image-text py-5">
       <div class="text">
-        <div class="container px-sm-0">
+        <div class="container px-sm-0 mx-md-0">
           <div class="row">
             <h3 class="text-center text-md-start">1. Tell us about yourself</h3>
             <p>In order to reply to your demand the best way, we need to get to know you a little.
@@ -122,7 +123,7 @@
     </section>
     <section id="second" class="image-text pb-5">
       <div class="text">
-        <div class="container px-sm-0">
+        <div class="container px-sm-0 mx-md-0">
           <div class="row text-center text-md-start">
             <h3>2. How can we help you?</h3>
             <p>Select what you are interested in (optional)</p>
@@ -168,10 +169,13 @@
     </section>
     <section id="third" class="image-text pb-5">
       <div class="text">
-        <div class="container px-sm-0">
+        <div class="container px-sm-0 mx-md-0">
           <div class="row text-center text-md-start">
             <h3>3. Write us a note</h3>
-            <p>Let us know in more details what you're looking for, and we will prepare it for you.</p>
+            <p>Let us know in more details what you're looking for,
+              <br class="d-md-none">
+              and we will prepare it for you.
+            </p>
           </div>
         </div>
       </div>
@@ -186,7 +190,7 @@
         </div>
       </div>
     </section>
-    <section id="submit" class="mb-5 text-center text-md-end mx-md-4 mx-lg-0">
+    <section id="submit" class="mb-5 text-center text-md-end">
       <a href="" class="btn btn-primary">Contact us</a>
     </section>
   </section>
@@ -299,7 +303,9 @@
   <script>
     (function () {
       var services = getParameterByName('services');
-      document.getElementById(services).checked = true;
+      if (services) {
+        document.getElementById(services).checked = true;
+      }
     })();
 
     function getParameterByName(name, url = window.location.href) {
@@ -311,6 +317,19 @@
       return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
   </script>
+  <script>
+    document.getElementsByClassName('navbar-toggler-icon')[0].addEventListener('click', function () {
+      navbarToggler = document.getElementsByClassName('navbar-toggler')[0];
+      if (!navbarToggler.classList.contains('collapsed')) {
+        document.getElementsByTagName('nav')[0].classList.remove('close-sidenav')
+        document.getElementsByTagName('nav')[0].classList.add('open-sidenav')
+      } else {
+        document.getElementsByTagName('nav')[0].classList.remove('open-sidenav')
+        document.getElementsByTagName('nav')[0].classList.add('close-sidenav')
+      }
+    })
+  </script>
+
 </body>
 
 </html>

@@ -15,15 +15,15 @@
     }
 
     .btn.btn-outline-primary {
-        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, $paragraph-color);
+        @include create-typography(0.875rem, 1.25rem, $nunito-sans-font, 300, #c8d0da); //$paragraph-color WITH 0.4 opacity
         box-shadow: 0 2px 4px 0 rgba(119,138,163,0.3);
         border: none;
         padding: 10px 29px;
-        // padding: 0.625rem 1.8125rem  0.75rem;
-        opacity: 0.4;
+        background-color: #fff;
+        // opacity: 0.4;
 
         &:hover {
-            color: $paragraph-color;
+            color: #c8d0da;
         }
     }
 
