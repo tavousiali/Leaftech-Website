@@ -1,5 +1,5 @@
-@use '../../custom' as *;
-@use '../../components/mixin' as *;
+@use "../../custom" as *;
+@use "../../components/mixin" as *;
 
 section {
     .title {
@@ -82,10 +82,14 @@ header {
         margin-top: -4px !important;
 
         @include media-breakpoint-up(md) {
-            margin-top: -5px !important;
+            // margin-top: -5px !important;
+            position: absolute;
+            left: 0;
+            top: 446px;
         }
 
         @include media-breakpoint-up(lg) {
+            position: initial;
             margin-top: -6px !important;
         }
     }

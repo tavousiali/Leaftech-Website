@@ -11089,11 +11089,14 @@ header hr {
 }
 @media (min-width: 768px) {
   header hr {
-    margin-top: -5px !important;
+    position: absolute;
+    left: 0;
+    top: 446px;
   }
 }
 @media (min-width: 992px) {
   header hr {
+    position: initial;
     margin-top: -6px !important;
   }
 }

@@ -1,5 +1,5 @@
-@use '../../custom' as *;
-@use '../../components/mixin' as *;
+@use "../../custom" as *;
+@use "../../components/mixin" as *;
 
 header {
     .container {
@@ -13,10 +13,16 @@ header {
     background-color: $bg-color;
 
     hr {
-        margin-top: -3px !important;
+        margin-top: -1px !important;
 
         &.d-lg-block {
             margin-top: -1px !important;
+        }
+
+        @include media-breakpoint-between(sm, lg) {
+            position: absolute;
+            left: 0;
+            top: 477px;
         }
     }
 }
